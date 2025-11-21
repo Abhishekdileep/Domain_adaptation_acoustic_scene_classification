@@ -1,0 +1,93 @@
+# Ignore common large binary/archive/media files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+*.img
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+*.jar
+*.war
+*.ear
+*.apk
+*.deb
+
+# Compiled / build outputs
+*.o
+*.obj
+*.class
+*.pyc
+*.pyo
+*.pyd
+*.rlib
+*.rlib
+/build/
+dist/
+target/
+out/
+bin/
+obj/
+*.egg-info/
+
+# Large media and document formats
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.psd
+*.ai
+*.indd
+*.pdf
+*.pptx
+*.ppt
+*.key
+
+# Databases, caches and logs
+*.sqlite
+*.sqlite3
+*.db
+*.log
+.cache/
+.cache-*/
+*.pid
+
+# Package manager directories (often large)
+node_modules/
+vendor/
+.gradle/
+.cargo/
+.packages/
+bower_components/
+
+# Python virtual envs and env folders
+env/
+venv/
+.venv/
+ENV/
+
+# IDE / OS generated
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Optional: ignore any file larger than a human-recognizable pattern by extension.
+# Note: .gitignore cannot filter by file size; to remove already tracked large files use:
+#   git rm --cached <path> && git commit -m "Remove large file"
+# or find + git rm:
+#   find . -type f -size +50M -print0 | xargs -0 git rm --cached
+
+DcaseNet/DCASENetShellScriptBuilder
+DcaseNet/__pycache__
+DcaseNet/weights
