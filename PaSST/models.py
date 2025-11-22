@@ -118,9 +118,9 @@ def GVBLoss(bridge_out, bridge_target=0.5):
     target = torch.tensor([bridge_target]).cuda().repeat(bridge_out.size(0), 1)
     return -(target * torch.log(bridge_out) + (1.0 - target) * torch.log(1.0 - bridge_out))
 # --- A new, combined model for GVB integration ---
-class cnn_GVB(nn.Module):
+class passt_GVB(nn.Module):
     def __init__(self):
-        super(cnn_GVB, self).__init__()
+        super(passt_GVB, self).__init__()
         self.classifier = Classifier()
         self.bridge = Bridge()
 
